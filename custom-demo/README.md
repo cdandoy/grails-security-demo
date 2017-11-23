@@ -1,4 +1,4 @@
-#custom-demo
+# custom-demo
 This application identifies users not only by username but also by the host used to login.
 
 A `host` field has been added to the [`User`](https://github.com/cdandoy/grails-security-demo/blob/master/custom-demo/grails-app/domain/org/dandoy/User.groovy)
