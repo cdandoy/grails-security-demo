@@ -5,4 +5,4 @@ It consists of a default Grails application and a basic Grails Spring Security s
 
 The only addition is that it implements 'Tomcat's Guessed Username' by using a 
 `onAuthenticationSuccessEvent` listener which sets a session attribute.  
-See [`application.groovy:25`](https://github.com/cdandoy/grails-security-demo/blob/master/basic-demo/grails-app/conf/application.groovy#L25)
+See [`application.groovy:25`](grails-app/conf/application.groovy@l25)
