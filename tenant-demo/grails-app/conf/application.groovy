@@ -1,3 +1,5 @@
+grails.gorm.default.mapping = { 'id'(generator: 'identity') }
+
 // Added by the Spring Security Core plugin:
 grails.plugin.springsecurity.userLookup.userDomainClassName = 'org.dandoy.User'
 grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'org.dandoy.UserRole'

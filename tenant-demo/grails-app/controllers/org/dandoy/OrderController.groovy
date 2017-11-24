@@ -3,11 +3,13 @@ package org.dandoy
 import grails.plugin.springsecurity.annotation.Secured
 
 @Secured('ROLE_ADMIN')
-class SecuredController {
+class OrderController {
 
     def index() {
-        [
-                orders: Order.list(),
-        ]
+        [orders: Order.list()]
+    }
+
+    def detail(long id) {
+        [order: Order.get(id)]
     }
 }

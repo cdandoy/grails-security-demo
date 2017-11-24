@@ -1,0 +1,80 @@
+{
+  "accounts": [
+    {
+      "name": "Local Host",
+      "host": "localhost",
+      "users": [
+        {
+          "username": "me",
+          "password": "password"
+        }
+      ],
+      "orders": [
+        {
+          "customer": "Opaque Ostrich",
+          "orderDetails": [
+            {
+              "product": "Alfafa",
+              "quantity": 1
+            },
+            {
+              "product": "Leash, extra long",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "customer": "Tiny Elephant",
+          "orderDetails": [
+            {
+              "product": "Cat Chew Sticks",
+              "quantity": 3
+            },
+            {
+              "product": "Sea Captain Dog Costume",
+              "quantity": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Home Sweet Home",
+      "host": "127.0.0.1",
+      "users": [
+        {
+          "username": "me",
+          "password": "secret"
+        }
+      ],
+      "orders": [
+        {
+          "customer": "Tony's Pizza",
+          "orderDetails": [
+            {
+              "product": "Chopped Tomatoes",
+              "quantity": 1
+            },
+            {
+              "product": "Flour",
+              "quantity": 2
+            }
+          ]
+        },
+        {
+          "customer": "Tres Casas Grill",
+          "orderDetails": [
+            {
+              "product": "Fresh Tomatoes",
+              "quantity": 1
+            },
+            {
+              "product": "Onions",
+              "quantity": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

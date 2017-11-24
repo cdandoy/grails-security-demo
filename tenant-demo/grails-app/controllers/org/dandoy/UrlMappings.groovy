@@ -9,7 +9,7 @@ class UrlMappings {
             }
         }
 
-        "/"(controller: 'unsecured')
+        "/"(controller: 'order')
         "500"(view:'/error')
         "404"(view:'/notFound')
     }

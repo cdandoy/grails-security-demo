@@ -26,28 +26,16 @@
                         <sec:loggedInUserInfo field='host'/>
                     </li>
                 </sec:ifLoggedIn>
-                <li class="${params.controller == 'unsecured' ? 'active' : ''}">
-                    <g:link controller="unsecured">
-                        Unsecured
-                    </g:link>
-                </li>
-                <li class="${params.controller == 'secured' ? 'active' : ''}">
-                    <g:link controller="secured">
-                        Secured
-                    </g:link>
-                </li>
             </ul>
 
-            <sec:ifLoggedIn>
-                <g:form controller="logout" class="nav navbar-nav navbar-right">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <button type="submit" id="button-logout" class="btn btn-primary">Logout</button>
-                        </li>
-                    </ul>
-                </g:form>
-            </sec:ifLoggedIn>
-        </div><!--/.nav-collapse -->
+            <g:form controller="logout" class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <button type="submit" id="button-logout" class="btn btn-primary">Logout</button>
+                    </li>
+                </ul>
+            </g:form>
+        </div>
     </div>
 </nav>
 
