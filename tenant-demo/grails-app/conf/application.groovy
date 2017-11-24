@@ -24,12 +24,6 @@ grails.plugin.springsecurity.filterChain.chainMap = [
         [pattern: '/**', filters: 'JOINED_FILTERS']
 ]
 
-// Adds Tomcat's guessed username
-grails.plugin.springsecurity.useSecurityEventListener = true
-grails.plugin.springsecurity.onAuthenticationSuccessEvent = { e, appCtx ->
-    grails.plugin.springsecurity.web.SecurityRequestHolder.request.getSession(false)?.setAttribute('userName', e.source.principal.username)
-}
-
 grails.plugin.springsecurity.providerNames = [
         'myDaoAuthenticationProvider',
         'anonymousAuthenticationProvider',
