@@ -16,7 +16,7 @@ class MyGormUserDetailsService extends GormUserDetailsService {
     @Transactional(readOnly = true, noRollbackFor = [IllegalArgumentException, UsernameNotFoundException])
     UserDetails loadUserByUsernameAndHost(String host, String username) throws UsernameNotFoundException {
 
-        User user = User.findByHostAndUsername(host, username)
+        User user = User.findByUsername(username)
 
         if (!user) {
             log.warn 'User not found: {}', username
