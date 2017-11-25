@@ -1,3 +1,4 @@
+<%@ page import="org.dandoy.Account" %>
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
@@ -23,7 +24,7 @@
                     <li class="navbar-brand">
                         <sec:loggedInUserInfo field='username'/>
                         @
-                        <sec:loggedInUserInfo field='host'/>
+                        ${Account.first().name}
                     </li>
                 </sec:ifLoggedIn>
             </ul>
